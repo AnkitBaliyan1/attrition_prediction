@@ -1,6 +1,6 @@
-# attrition_prediction
+# attrition_prediction_using_ML_tools
 
-The project was past of Kaggle competition assignment completed as part of academics during program at IIM-Indore. This classification problem aims to predict the attrition based on comprehensive data of demography, job related details along with satisfaction score. 
+The project was part of Kaggle competition assignment completed during program at IIM-Indore. This classification problem aims to predict the attrition based on comprehensive data of demography, job related details along with satisfaction score. 
 
 The dataset of 1677 observations was to train the model and predict for 1119 observations with over 30 independent variables. The diverse set of independent variables was indeed tough to handled but feature selection was an important learning from here. 
 

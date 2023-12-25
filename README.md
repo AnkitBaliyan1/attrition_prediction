@@ -1,24 +1,32 @@
-# attrition_prediction_using_ML_tools
+# Employee Attrition Prediction using Machine Learning
 
-The project was part of Kaggle competition assignment completed during program at IIM-Indore. This classification problem aims to predict the attrition based on comprehensive data of demography, job related details along with satisfaction score. 
+## Overview
 
-The dataset of 1677 observations was to train the model and predict for 1119 observations with over 30 independent variables. The diverse set of independent variables was indeed tough to handled but feature selection was an important learning from here. 
+This project was completed as part of a Kaggle competition assignment during a program at IIM-Indore. The objective of this classification problem is to predict employee attrition based on comprehensive data, including demographic information, job-related details, and satisfaction scores.
 
-Variables like ‘Over18’ which capture if the employee is over 18 year of age, which was removed since it was homogenous. And yes, that make sense also, as legal age for work is over 18. 
+The dataset consists of 1,677 observations used for training the model and predicting attrition for 1,119 observations. There are over 30 independent variables in the dataset, making it a challenging task. However, this project provided valuable insights into feature selection and data preprocessing techniques.
 
-Other data cleaning and preprocessing task were required to handle not only outliers but also avoid using some observations with really does not make sense for particular variable. One such variable was “Education”. Education level 15 doesn’t make sense with only 1 observation when all other observation were between 1 and 5. For sure, this was an error entry. 
+## Data Cleaning and Preprocessing
 
-LabelEncoder, StandardScaler and MinMaxScaler from sklearn.preprocessing library were used for data-preprocessing.
+Handling a diverse set of independent variables required extensive data cleaning and preprocessing. Several steps were taken to prepare the data for modeling:
 
-Handling abnormal observation for both continuous and categorical variable was not easy. Using Label Encoding and One Hot Encoding for the categorical and MinMaxScaler technique for scaling the continuous variables, I was able to finish the data-preprocessing. 
+- **Feature Selection**: Variables like 'Over18,' which capture whether the employee is over 18 years of age, were removed since they were homogenous and didn't provide meaningful information.
 
-Multiple model were trained and tested, but LogisticRegression model fetched the best accuracy score of over 80%
-Various models trained and tested: 
-  1. LogisticRegression
-  2. Random Forest Classifier
-  3. Decision Tree Classifier
+- **Outlier Handling**: Outliers in both continuous and categorical variables were addressed to ensure the model's robustness.
 
+- **Data Entry Errors**: Data entry errors, such as an education level of 15 with only one observation while all others were between 1 and 5, were identified and corrected.
 
-The model predicted correct for around 75% of validation data but it performed better with over 80% accuracy on total test cases. This was 2nd highest accuracy in predicting the attrition of all participating for this competition. 
+- **Data Scaling**: LabelEncoder, StandardScaler, and MinMaxScaler from the sklearn.preprocessing library were used for data preprocessing. LabelEncoding and One-Hot Encoding were used for categorical variables, and MinMaxScaler was used for scaling continuous variables.
+
+## Model Training and Testing
+
+Multiple machine learning models were trained and tested on the preprocessed data. The Logistic Regression model achieved the highest accuracy score of over 80%. Other models were also evaluated, including Random Forest Classifier and Decision Tree Classifier.
+
+## Results
+
+The model achieved a correct prediction rate of around 75% on the validation data. However, it performed even better on the total test cases, with an accuracy of over 80%. This accuracy rate ranked as the second-highest among all participants in the competition for predicting attrition.
 
 <img width="876" alt="Screenshot 2023-06-15 at 8 43 53 AM" src="https://github.com/AnkitBaliyan1/attrition_prediction/assets/86275544/ba7223bd-9c21-48fe-aa70-38fef475ade2">
+
+This project demonstrates the effectiveness of machine learning in predicting employee attrition and highlights the importance of data preprocessing and feature selection in achieving accurate results.
+
